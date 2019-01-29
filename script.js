@@ -2,7 +2,18 @@ const countdown = 6000; // 6 seconds. 20 min => 20 * 60000
 let counter1 = countdown;
 
 function timedText() {
-    setInterval(myTimeout1, countdown) 
+  var options = {
+    type: "basic",
+    title: "my first popup",
+    message: "tis is cool",
+    iconUrl: "48.png"
+  };
+
+  chrome.notifications.create(options, callback);
+
+  callback = () => console.log('popup done'); 
+
+  setInterval(myTimeout1, countdown) 
 }
 
 function notifyMe() {
@@ -47,15 +58,28 @@ function myTimeout1() {
  
   
   function notify() {
-    chrome.notifications.create("richnotify", {
-      type: "image",
-      iconUrl: "48.png",
-      imageUrl: image,
-      title: "Notification Title",
-      message: "message",
-    }, function () {
-      console.log("Notification showed!")
-    })
+
+    var options = {
+      type: "basic",
+      title: "my first popup",
+      message: "tis is cool",
+      iconUrl: "48.png"
+    };
+
+    chrome.notifications.create(options, callback);
+
+    callback = () => console.log('popup done'); 
+    
+
+   // chrome.notifications.create("richnotify", {
+   //   type: "image",
+   //   iconUrl: "48.png",
+   //   imageUrl: image,
+   //   title: "Notification Title",
+   //   message: "message",
+   // }, function () {
+   //   console.log("Notification showed!")
+   // })
   }
 
   notify();
