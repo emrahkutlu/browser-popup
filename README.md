@@ -1,4 +1,6 @@
-# this is a browser notification
+# oculi - browser notification 
+(this is a browser notification, that helps to take care for your eyes when online.)
+
 notification name ideas:
 - oculi (latin)
 - euyun (arabic)
