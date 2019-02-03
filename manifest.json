@@ -1,11 +1,19 @@
 {  
   "manifest_version": 2,  
-  "name": "Rich Notification Sample",
+  "name": "oculi",
+  "author":"Emrah Kutlu",
+  "homepage_url":"https://github.com/emrahkutlu/browser-popup",
+  "description": "browser extension, shows a notification every 20 minutes, to remember to take a break for your eyes",
+    "icons": {
+      "48": "48.png",
+       "96": "48.png"
+      },
   "background": {
     "scripts": ["s1.js"]
   },
   "browser_action": {
-    "default_popup": "index.html" 
+    "default_popup": "index.html", 
+    "default_title": "oculi"
   },
   "version": "1.0",
   "permissions": ["notifications"]
