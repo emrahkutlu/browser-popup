@@ -19,3 +19,5 @@ notification development:
 - https://developer.chrome.com/apps/notifications#type-TemplateType
 - https://developer.chrome.com/apps/richNotifications#develop
 - https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
+- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension
+
