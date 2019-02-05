@@ -3,10 +3,11 @@
   "name": "oculi",
   "author":"Emrah Kutlu",
   "homepage_url":"https://github.com/emrahkutlu/browser-popup",
+  "default_locale": "en",
   "description": "browser extension, shows a notification every 20 minutes, to remember to take a break for your eyes",
     "icons": {
-      "48": "48.png",
-       "96": "48.png"
+      "48": "nazar2_48.png",
+       "96": "nazar2_96.png"
       },
   "background": {
     "scripts": ["s1.js"]
@@ -16,5 +17,5 @@
     "default_title": "oculi"
   },
   "version": "1.0",
-  "permissions": ["notifications"]
+  "permissions": ["background", "notifications"]
 }
