@@ -1,20 +1,20 @@
 {  
   "manifest_version": 2,  
-  "name": "oculi",
+  "name": "oculi - Take a break for your eyes",
   "author":"Emrah Kutlu",
   "homepage_url":"https://github.com/emrahkutlu/browser-popup",
   "default_locale": "en",
-  "description": "browser extension, shows a notification every 20 minutes, to remember to take a break for your eyes",
+  "description": "Shows a rich notification every 20 minutes, to remember to take a break for your eyes. Based on the 20-20-20 rule. See github for information.",
     "icons": {
-      "48": "nazar2_48.png",
-       "96": "nazar2_96.png"
+      "48": "nazar4_48.png",
+       "96": "nazar4_96.png"
       },
   "background": {
     "scripts": ["s1.js"]
   },
   "browser_action": {
-    "default_popup": "index.html", 
-    "default_title": "oculi"
+  /*"default_popup": "index.html", */
+    "default_title": "oculi - Take a break for your eyes\n\n20-20-20 rule:\nEvery 20 minutes,\nfor at least 20 seconds\nlook at something 20 feet away."
   },
   "version": "1.0",
   "permissions": ["background", "notifications"]

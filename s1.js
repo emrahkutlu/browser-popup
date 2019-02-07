@@ -12,34 +12,34 @@
 
 var options = {
     type: "basic", //image
-    title: "care for your eyes",
-    message: "take a break", //randomFact[rndmFct]
+    title: "oculi - Take care for your eyes",
+    message: "20-20-20 rule:\nEvery 20 minutes,\nfor at least 20 seconds,\nlook at something 20 feet away.", //randomFact[rndmFct]
     //contextMessage: "for 20 seconds",
     //priority: 2,
     //eventTime: Date.now() + n,
     silent: true,
-    iconUrl: "nazar2_96.svg",
+    iconUrl: "nazar4_96.svg",
     //imageUrl: "momoa.jpg"
   };
 
 var optionsInit = {
-     type: "image",
-     title: "care for your eyes",
-     message: "This is what your notification looks like",
+     type: "basic",
+     title: "oculi - Take care for your eyes",
+     message: "20-20-20 rule:\nEvery 20 minutes,\nfor at least 20 seconds,\nlook at something 20 feet away.", //randomFact[rndmFct]
      //contextMessage: "for 20 seconds",
      //priority: 2,
      //eventTime: Date.now() + n,
      silent: true,
-     iconUrl: "nazar2_96.svg",
+     iconUrl: "nazar4_96.svg",
      //imageUrl: "momoa.jpg"
 };
 
-const intervall = 10000; //20 * 60000; //30000; = 30 sec
+const intervall = 20 * 60000;//10000; //20 * 60000; //30000; = 30 sec
 notifi = () => chrome.notifications.create(options, callback);
 
-//notifiInit = () => chrome.notifications.create(optionsInit, callback);     //first time notification shall show how notification looks like
+notifiInit = () => chrome.notifications.create(optionsInit, callback);     //first time notification shall show how notification looks like
 
-//notifiInit(); // initial function call 
+notifiInit(); // initial function call 
 setInterval(notifi, intervall);  // call intervall function
 
 function callback() {
